@@ -6,14 +6,13 @@ def main():
 
     num = random.randint(1, 100)
 
-    correct = False
+    guess = -1
 
-    while not correct:
+    while guess != num:
         guess = int(input("Guess a number between 1 & 100: "))
 
         if guess == num:
             print("Got it: The number is {}".format(num))
-            correct = True
         elif guess < num:
             print("Too low!")
         else:
